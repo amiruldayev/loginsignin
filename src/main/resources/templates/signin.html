@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link type="text/css" rel="stylesheet" th:href="@{'/css/bootstrap.min.css'}">
+  <script type="text/javascript" th:src="@{'/js/bootstrap.bundle.js'}"></script>
+</head>
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+
+<main class="col-xxl-8 mx-auto">
+  <form th:action="@{'/signin'}" method="post" class="mx-auto">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="name" autocomplete="off">
+      <label>Name</label>
+    </div>
+    <br><br>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="surname" autocomplete="off">
+      <label>Surname</label>
+    </div>
+    <br><br>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="login" autocomplete="off">
+      <label>Login</label>
+    </div>
+    <br><br>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="password" autocomplete="off">
+      <label>Password</label>
+    </div>
+    <br><br>
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+  </form>
+</main>
+
+
+
+</body>
+</html>
